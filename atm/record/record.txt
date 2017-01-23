@@ -1,0 +1,45 @@
+    [mkdir] Skipping /home/davood/Pictures/sbi/atm/class because it already exists.
+    [javac] /home/davood/Pictures/sbi/atm/build.xml:7: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] login.java omitted as /home/davood/Pictures/sbi/atm/class/login.class is up to date.
+compile:  duration 0 seconds
+
+package:
+      [jar] login.class omitted as /home/davood/Pictures/sbi/atm/lib/class.jar:login.class is up to date.
+      [jar] No sources found.
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+Location: /home/davood/Pictures/sbi/atm/build.xml:11: 
+package:  duration 0 seconds
+
+copy:
+    [mkdir] Skipping /home/davood/Pictures/sbi/atm/copy because it already exists.
+     [copy] /home/davood/Pictures/sbi/atm/class/login.class omitted as /home/davood/Pictures/sbi/atm/copy/user.class/login.class is up to date.
+copy:  duration 0 seconds
+
+properties:
+ [property] Loading /home/davood/Pictures/sbi/atm/build.properties
+     [echo] davood
+     [echo] ANT_HOME:/home/davood/Downloads/apache-ant-1.9.7
+     [echo] ANT_PATH:/home/davood/Pictures/sbi/atm/build.xml
+     [echo] javahome:/home/davood/Downloads/jdk1.8.0_111/jre
+     [echo] javaversion:1.8.0_111
+     [echo] antversion:Apache Ant(TM) version 1.9.7 compiled on April 9 2016
+properties:  duration 0 seconds
+
+tstamp:
+     [echo] Time:December 30 2016
+     [echo] Time:2348
+     [echo] Time:20161230
+tstamp:  duration 0 seconds
+
+time:
+Override ignored for property "DSTAMP"
+Override ignored for property "TSTAMP"
+Override ignored for property "TODAY"
+     [echo] 20161230:114830
+    [mkdir] Skipping /home/davood/Pictures/sbi/atm/backup because it already exists.
+     [copy] Copying 1 file to /home/davood/Pictures/sbi/atm/backup
+     [copy] Copying /home/davood/Pictures/sbi/atm/lib/class.jar to /home/davood/Pictures/sbi/atm/backup/atm_20161230:114830.jar
+     [echo] 12345
+time:  duration 0 seconds
+
+BUILD SUCCESSFUL

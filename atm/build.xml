@@ -1,0 +1,51 @@
+<project name="atm" default="time">
+
+<target name="compile">
+<mkdir dir="record"/>
+<record name="record/record.txt" loglevel="verbose" action="start"/>
+<mkdir dir="class"/>
+<javac srcdir="src" destdir="class"/>
+</target>
+
+<target name="package" depends="compile">
+<jar basedir="class" destfile="lib/class.jar"/>
+</target>
+
+<target name="copy" depends="package">
+<mkdir dir="copy"/>
+<copy file="class/login.class" todir="copy/user.class"/>
+</target>
+
+<target name="clean">
+<delete dir="class"/>
+<delete dir="lib"/>
+</target>
+
+<target name="properties" depends="copy">
+<property file="build.properties"/>
+<echo message="${user}"/>
+<echo message="ANT_HOME:${ant.home}"/>
+<echo message="ANT_PATH:${ant.file}"/>
+<echo message="javahome:${java.home}"/>
+<echo message="javaversion:${java.version}"/>
+<echo message="antversion:${ant.version}"/>
+</target>
+
+<target name="tstamp" depends="properties">
+<tstamp/>
+<echo message="Time:${TODAY}"/>
+<echo message="Time:${TSTAMP}"/>
+<echo message="Time:${DSTAMP}"/>
+</target>
+
+<target name="time" depends="tstamp">
+<tstamp>
+<format property="mytime" pattern="yyyyMMdd:hhmmss"/>
+</tstamp>
+<echo message="${mytime}"/>
+<mkdir dir="backup"/>
+<copy file="lib/class.jar" tofile="backup/atm_${mytime}.jar"/>
+<echo message="${passwrd}"/>
+</target>
+<record name="record/record.txt" action="stop"/>
+</project>

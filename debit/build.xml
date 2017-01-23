@@ -1,0 +1,22 @@
+<project name="debit" default="prop">
+<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+<target name="conditions">
+<mkdir dir="new"/>
+<touch file="hi"/>
+<if>
+<available file="hi"/>
+<then>
+<echo message="available file"/>
+</then>
+</if>
+</target>
+<target name="prop" depends="conditions">
+<property name="country" value="india"/>
+<!--<local name="country"/> -->
+<property name="country" value="dubai"/>  
+<echo message="${country}"/>
+
+</target>
+
+</project>
+

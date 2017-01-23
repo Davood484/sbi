@@ -1,0 +1,9 @@
+<project name="sbi" default="all" basedir=".">
+<target name="all">
+<echo message="build.xml files are success"/>
+<ant dir="atm"/>
+<ant dir="debit"/>
+<ant dir="credit"/>
+<echo message="building successfully"/>
+</target>
+</project>
