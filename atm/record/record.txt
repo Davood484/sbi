@@ -26,19 +26,19 @@ properties:
 properties:  duration 0 seconds
 
 tstamp:
-     [echo] Time:December 30 2016
-     [echo] Time:2348
-     [echo] Time:20161230
+     [echo] Time:January 24 2017
+     [echo] Time:1009
+     [echo] Time:20170124
 tstamp:  duration 0 seconds
 
 time:
 Override ignored for property "DSTAMP"
 Override ignored for property "TSTAMP"
 Override ignored for property "TODAY"
-     [echo] 20161230:114830
+     [echo] 20170124:100956
     [mkdir] Skipping /home/davood/Pictures/sbi/atm/backup because it already exists.
      [copy] Copying 1 file to /home/davood/Pictures/sbi/atm/backup
-     [copy] Copying /home/davood/Pictures/sbi/atm/lib/class.jar to /home/davood/Pictures/sbi/atm/backup/atm_20161230:114830.jar
+     [copy] Copying /home/davood/Pictures/sbi/atm/lib/class.jar to /home/davood/Pictures/sbi/atm/backup/atm_20170124:100956.jar
      [echo] 12345
 time:  duration 0 seconds
 
